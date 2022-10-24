@@ -61,7 +61,7 @@ public class PersonnelServiceImpl implements IPersonnelService {
     }
     
     @Override
-    public Personnel getPersonnelByHour() {
+    public List<Personnel> getPersonnelByHour() {
         return repository.findPersonnelByHour();
     }
 

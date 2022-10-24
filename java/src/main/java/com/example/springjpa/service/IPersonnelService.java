@@ -18,5 +18,5 @@ public interface IPersonnelService {
 
     Personnel read (Long id);
 
-    Personnel getPersonnelByHour ();
+    List<Personnel> getPersonnelByHour ();
 }

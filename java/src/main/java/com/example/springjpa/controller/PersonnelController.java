@@ -45,7 +45,7 @@ public class PersonnelController {
     }
 
     @GetMapping("hour7")
-    public ResponseEntity<Personnel> getPersonnelByHour () {
+    ResponseEntity<List<Personnel>> getPersonnelByHour () {
         return ResponseEntity.ok(service.getPersonnelByHour());
     }
 }

@@ -17,6 +17,6 @@ public interface PersonnelRepository extends JpaRepository<Personnel, Long> {
             select *from Personnel
             where hour(time_in) >= 7 and hour(time_out) <= 8
             """ ,nativeQuery = true)
-    Personnel findPersonnelByHour ();
+    List<Personnel> findPersonnelByHour ();
 
 }
